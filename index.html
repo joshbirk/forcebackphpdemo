@@ -71,7 +71,7 @@ function sessionCallback(oauthResponse) {
     } else {
         client.setSessionToken(oauthResponse.access_token, null, oauthResponse.instance_url);
 		console.log("init backbone");
-		window.location.href = window.location.href.split('#')[0]+'#contacts';
+		window.location.href = window.location.href.split('#')[0]+'#';
 		myapp(client);
  
     }
