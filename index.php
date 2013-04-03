@@ -387,7 +387,7 @@ function getAuthCredentialsError(error) {
             $("#contacts-content").html(new app.ContactsView({model: contactsCollection}).el);
             // Let jQuery Mobile do its stuff
             $("#contacts-content").trigger( 'create' );
-            $.mobile.changePage( "#contacts" , { reverse: false, changeHash: false } );
+            $.mobile.changePage( "#" , { reverse: false, changeHash: false } );
          },error: function(model, response) {console.log('ERROR::'+response.responseText);}});
 		 console.log("collection end");	
 		
