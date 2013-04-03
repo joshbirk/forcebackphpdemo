@@ -71,7 +71,7 @@ function sessionCallback(oauthResponse) {
     } else {
         client.setSessionToken(oauthResponse.access_token, null, oauthResponse.instance_url);
 		console.log("init backbone");
-		window.location.href = window.location.href.split('#')[0]+'#';
+		window.location.href = window.location.href.split('#')[0]+'#``';
 		myapp(client);
  
     }
@@ -135,7 +135,7 @@ function getAuthCredentialsError(error) {
 
   <script type="text/template" id="contact-template">
     <% if (typeof(Id) !== 'undefined') { %>
-      <a href="#<%= Id %>"><%- Name %></a> 
+      <a href="#	<%= Id %>"><%- Name %></a> 
     <% } else { %>
       <%- Name %>
     <% } %>
@@ -372,7 +372,7 @@ function getAuthCredentialsError(error) {
       app.Router = Backbone.Router.extend({ 
         routes: {
           "": "contacts",
-          "#": "contacts",
+          "contacts": "contacts",
 		  "new": "newContact",
           ":id": "contact"
         },          
