@@ -233,7 +233,7 @@ function getAuthCredentialsError(error) {
       //--------------
       app.Contact = Backbone.Force.Model.extend({
         type:'Contact',
-        fields:['Id', 'FirstName', 'LastName', 'Email']
+        fields:['Id', 'Name', 'FirstName', 'LastName', 'Email']
       });
 
       //--------------
@@ -382,7 +382,6 @@ function getAuthCredentialsError(error) {
           console.log("collection search");
           contactsCollection.fetch({success: function(){
             console.log("collection found");
-                                   
             $.mobile.loading( "hide" );
             $("#contacts-content").html(new app.ContactsView({model: contactsCollection}).el);
             // Let jQuery Mobile do its stuff
