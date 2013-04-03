@@ -18,8 +18,7 @@
   <script src="resources/lib/backbone.js" type="text/javascript"></script>
   <script src="resources/lib/forcetk.js" type="text/javascript"></script>
   <script src="resources/lib/backbone.force.js" type="text/javascript"></script>
-  <script src="resources/lib/jquerymobile.js" type="text/javascript"></script>
-
+  
 <script>
 
 var loginUrl    = 'https://login.salesforce.com/';
@@ -83,6 +82,7 @@ function getAuthCredentialsError(error) {
     console.log("getAuthCredentialsError: " + error);
 }
 </script>
+<script src="resources/lib/jquerymobile.js" type="text/javascript"></script>
 
 
 
