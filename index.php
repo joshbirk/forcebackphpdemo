@@ -18,13 +18,14 @@
   <script src="resources/lib/backbone.js" type="text/javascript"></script>
   <script src="resources/lib/forcetk.js" type="text/javascript"></script>
   <script src="resources/lib/backbone.force.js" type="text/javascript"></script>
-  
+  <script src="resources/lib/jquerymobile.js" type="text/javascript"></script>
+
 <script>
 
 var loginUrl    = 'https://login.salesforce.com/';
 var clientId    = '3MVG9A2kN3Bn17htFsz.Zr8IKNCCQXxeJw3skXWMxCgidqwimrc8TLmsC_UoBA07OADWGhSKZAmm8oLZpqy1y'; //demo only
 var redirectUri = 'https://forcebackphpdemo.herokuapp.com/index.php';
-var proxyUrl    = 'https://forcebackphpdemo.herokuapp.com/proxy.php';
+var proxyUrl    = 'https://forcebackphpdemo.herokuapp.com/proxy.php?mode=native';
 
 var client = new forcetk.Client(clientId, loginUrl, proxyUrl);
 
@@ -82,7 +83,6 @@ function getAuthCredentialsError(error) {
     console.log("getAuthCredentialsError: " + error);
 }
 </script>
-<script src="resources/lib/jquerymobile.js" type="text/javascript"></script>
 
 
 
