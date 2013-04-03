@@ -71,7 +71,7 @@ function sessionCallback(oauthResponse) {
     } else {
         client.setSessionToken(oauthResponse.access_token, null, oauthResponse.instance_url);
 		console.log("init backbone");
-		window.location.href = window.location.href.split('#')[0]+'#contacts';
+		window.location.href = window.location.href.split('#')[0]+'#';
 		myapp(client);
  
     }
@@ -372,7 +372,7 @@ function getAuthCredentialsError(error) {
       app.Router = Backbone.Router.extend({ 
         routes: {
           "": "contacts",
-          "#contacts": "contacts",
+          "#": "contacts",
 		  "new": "newContact",
           ":id": "contact"
         },          
