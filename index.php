@@ -94,7 +94,7 @@ function getAuthCredentialsError(error) {
   <!-- ========= -->
   <div id="contacts" data-role="page" data-title="Contacts">
     <div data-role="header">
-      	<h1>Contacts</h1>
+      <h1>Contacts</h1>
     </div><!-- /header -->
     <div data-role="content" id="contacts-content">
     </div>
@@ -383,11 +383,12 @@ function getAuthCredentialsError(error) {
           console.log("collection search");
           contactsCollection.fetch({success: function(){
             console.log("collection found");
+                                   
             $.mobile.loading( "hide" );
             $("#contacts-content").html(new app.ContactsView({model: contactsCollection}).el);
             // Let jQuery Mobile do its stuff
             $("#contacts-content").trigger( 'create' );
-            $.mobile.changePage( "#" , { reverse: false, changeHash: false } );
+            $.mobile.changePage( "#contacts" , { reverse: false, changeHash: false } );
          },error: function(model, response) {console.log('ERROR::'+response.responseText);}});
 		 console.log("collection end");	
 		
@@ -422,4 +423,3 @@ function getAuthCredentialsError(error) {
   </script>
 
 </body>
-</apex:page>
