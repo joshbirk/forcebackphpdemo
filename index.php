@@ -146,11 +146,19 @@ function getAuthCredentialsError(error) {
         <input type="hidden" name="Id" id="Id" value="<%- Id %>" />
       <% } %>
       <div data-role="fieldcontain">
-        <label for="Name">Contact Name:</label>
-        <% if (typeof(Name) !== 'undefined') { %>
-          <input name="Name" id="Name" value="<%- Name %>" />
+        <label for="Name">First Name:</label>
+        <% if (typeof(FirstName) !== 'undefined') { %>
+          <input name="FirstName" id="FirstName" value="<%- FirstName %>" />
         <% } else { %>
-          <input name="Name" id="Name" />
+          <input name="FirstName" id="FirstName" />
+        <% } %>
+      </div>
+	  <div data-role="fieldcontain">
+        <label for="Name">Last Name:</label>
+        <% if (typeof(LastName) !== 'undefined') { %>
+          <input name="LastName" id="LastName" value="<%- LastName %>" />
+        <% } else { %>
+          <input name="LastName" id="LastName" />
         <% } %>
       </div>
       <div data-role="fieldcontain">
@@ -225,7 +233,7 @@ function getAuthCredentialsError(error) {
       //--------------
       app.Contact = Backbone.Force.Model.extend({
         type:'Contact',
-        fields:['Id', 'Name', 'Email']
+        fields:['Id', 'FirstName', 'LastName', 'Email']
       });
 
       //--------------
