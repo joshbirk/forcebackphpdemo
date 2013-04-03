@@ -102,7 +102,7 @@ function getAuthCredentialsError(error) {
 
   <div id="contact" data-role="page" data-title="Contact">
     <div data-role="header">
-      	<a href='#contacts' id="back" class='ui-btn-left' data-icon='arrow-l'>Back</a>
+      	<a href='#' id="back" class='ui-btn-left' data-icon='arrow-l'>Back</a>
 		<h1>Contact</h1>
     </div><!-- /header -->
     <div data-role="content" id="contact-content">
