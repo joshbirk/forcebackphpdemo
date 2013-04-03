@@ -372,7 +372,7 @@ function getAuthCredentialsError(error) {
       app.Router = Backbone.Router.extend({ 
         routes: {
           "": "contacts",
-          "#": "contacts",
+          "#contacts": "contacts",
 		  "new": "newContact",
           ":id": "contact"
         },          
