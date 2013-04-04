@@ -24,8 +24,8 @@
 
 var loginUrl    = 'https://login.salesforce.com/';
 var clientId    = '<?=$_ENV['client_id']?>'; //demo only
-var redirectUri = 'https://forcebackphpdemo.herokuapp.com/index.php';
-var proxyUrl    = 'https://forcebackphpdemo.herokuapp.com/proxy.php?mode=native';
+var redirectUri = '<?=$_ENV['application_url']?>/index.php';
+var proxyUrl    = '<?=$_ENV['application_url']?>/proxy.php?mode=native';
 
 var client = new forcetk.Client(clientId, loginUrl, proxyUrl);
 

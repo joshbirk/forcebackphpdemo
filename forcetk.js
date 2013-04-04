@@ -184,7 +184,7 @@ if (forcetk.Client === undefined) {
                     xhr.setRequestHeader('SalesforceProxy-Endpoint', url);
                 }
                 xhr.setRequestHeader(that.authzHeader, "Bearer " + that.sessionId);
-                xhr.setRequestHeader('X-User-Agent', 'salesforce-toolkit-rest-javascript/' + that.apiVersion);
+                xhr.setRequestHeader('X-User-Agent', 'salesforce-toolkit-rest-javascript-backbone-php/' + that.apiVersion);
                 		
                 if (that.userAgentString !== null) {
                     xhr.setRequestHeader('User-Agent',that.userAgentString);
