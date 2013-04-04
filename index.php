@@ -290,7 +290,7 @@ function getAuthCredentialsError(error) {
         save: function(){
           this.model.save(null, {
             success: function(model) {
-              app.router.navigate('contacts', true);
+              app.router.navigate('contacts', {trigger: true});
             },
             error: function () {
               alert('Error saving');
@@ -301,7 +301,7 @@ function getAuthCredentialsError(error) {
         destroy: function(){
           this.model.destroy({
             success: function() {
-              app.router.navigate('contacts', true);              
+              app.router.navigate('contacts', {trigger: true});              
             },
               error: function () {
                 alert('Error deleting');
