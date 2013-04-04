@@ -23,7 +23,7 @@
 <script>
 
 var loginUrl    = 'https://login.salesforce.com/';
-var clientId    = '3MVG9A2kN3Bn17htFsz.Zr8IKNCCQXxeJw3skXWMxCgidqwimrc8TLmsC_UoBA07OADWGhSKZAmm8oLZpqy1y'; //demo only
+var clientId    = '<?=$_ENV['client_id']?>'; //demo only
 var redirectUri = 'https://forcebackphpdemo.herokuapp.com/index.php';
 var proxyUrl    = 'https://forcebackphpdemo.herokuapp.com/proxy.php?mode=native';
 
