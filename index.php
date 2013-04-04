@@ -290,11 +290,7 @@ function getAuthCredentialsError(error) {
         save: function(){
           this.model.save(null, {
             success: function(model) {
-<<<<<<< HEAD
-              app.router.navigate('contacts', {trigger: true});
-=======
-              app.router.navigate('contacts', true);
->>>>>>> 7f990b6c352aa60a92d72b58e4702438cbe3e6d3
+				app.router.navigate('contacts', {trigger: true});
             },
             error: function () {
               alert('Error saving');
@@ -305,11 +301,7 @@ function getAuthCredentialsError(error) {
         destroy: function(){
           this.model.destroy({
             success: function() {
-<<<<<<< HEAD
-              app.router.navigate('contacts', {trigger: true});              
-=======
-              app.router.navigate('contacts', true);              
->>>>>>> 7f990b6c352aa60a92d72b58e4702438cbe3e6d3
+				app.router.navigate('contacts', {trigger: true});              
             },
               error: function () {
                 alert('Error deleting');
