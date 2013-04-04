@@ -1,4 +1,4 @@
-<apex:page docType="html-5.0" standardStylesheets="false" showHeader="false" sidebar="false">
+<html>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -290,7 +290,11 @@ function getAuthCredentialsError(error) {
         save: function(){
           this.model.save(null, {
             success: function(model) {
+<<<<<<< HEAD
               app.router.navigate('contacts', {trigger: true});
+=======
+              app.router.navigate('contacts', true);
+>>>>>>> 7f990b6c352aa60a92d72b58e4702438cbe3e6d3
             },
             error: function () {
               alert('Error saving');
@@ -301,7 +305,11 @@ function getAuthCredentialsError(error) {
         destroy: function(){
           this.model.destroy({
             success: function() {
+<<<<<<< HEAD
               app.router.navigate('contacts', {trigger: true});              
+=======
+              app.router.navigate('contacts', true);              
+>>>>>>> 7f990b6c352aa60a92d72b58e4702438cbe3e6d3
             },
               error: function () {
                 alert('Error deleting');
@@ -423,3 +431,4 @@ function getAuthCredentialsError(error) {
   </script>
 
 </body>
+</html>
